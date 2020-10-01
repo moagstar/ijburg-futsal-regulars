@@ -1,0 +1,362 @@
+[
+  {
+    "date": "2020-09-30",
+    "name": "Jitse",
+    "team": "Red",
+    "points": 0
+  },
+  {
+    "date": "2020-09-30",
+    "name": "Ashwin",
+    "team": "Red",
+    "points": 0
+  },
+  {
+    "date": "2020-09-30",
+    "name": "JP",
+    "team": "Red",
+    "points": 0
+  },
+  {
+    "date": "2020-09-30",
+    "name": "Beppe",
+    "team": "Red",
+    "points": 0
+  },
+  {
+    "date": "2020-09-30",
+    "name": "Fatih",
+    "team": "Red",
+    "points": 0
+  },
+  {
+    "date": "2020-09-30",
+    "name": "Hassan",
+    "team": "Red",
+    "points": 0
+  },
+  {
+    "date": "2020-09-30",
+    "name": "Iarik",
+    "team": "Blue",
+    "points": 3
+  },
+  {
+    "date": "2020-09-30",
+    "name": "Paulo",
+    "team": "Blue",
+    "points": 3
+  },
+  {
+    "date": "2020-09-30",
+    "name": "Daniel",
+    "team": "Blue",
+    "points": 3
+  },
+  {
+    "date": "2020-09-30",
+    "name": "Al",
+    "team": "Blue",
+    "points": 3
+  },
+  {
+    "date": "2020-09-30",
+    "name": "Robin",
+    "team": "Blue",
+    "points": 3
+  },
+  {
+    "date": "2020-09-30",
+    "name": "Kai",
+    "team": "Blue",
+    "points": 3
+  },
+  {
+    "date": "2020-09-23",
+    "name": "Jitse",
+    "team": "Blue",
+    "points": 3
+  },
+  {
+    "date": "2020-09-23",
+    "name": "Hassan",
+    "team": "Blue",
+    "points": 3
+  },
+  {
+    "date": "2020-09-23",
+    "name": "Paulo",
+    "team": "Blue",
+    "points": 3
+  },
+  {
+    "date": "2020-09-23",
+    "name": "Daniel",
+    "team": "Blue",
+    "points": 3
+  },
+  {
+    "date": "2020-09-23",
+    "name": "Ashwin",
+    "team": "Blue",
+    "points": 3
+  },
+  {
+    "date": "2020-09-23",
+    "name": "John",
+    "team": "Blue",
+    "points": 3
+  },
+  {
+    "date": "2020-09-23",
+    "name": "Iarik",
+    "team": "Red",
+    "points": 0
+  },
+  {
+    "date": "2020-09-23",
+    "name": "Jorge",
+    "team": "Red",
+    "points": 0
+  },
+  {
+    "date": "2020-09-23",
+    "name": "Beppe",
+    "team": "Red",
+    "points": 0
+  },
+  {
+    "date": "2020-09-23",
+    "name": "JP",
+    "team": "Red",
+    "points": 0
+  },
+  {
+    "date": "2020-09-23",
+    "name": "Kai",
+    "team": "Red",
+    "points": 0
+  },
+  {
+    "date": "2020-09-23",
+    "name": "Fatih",
+    "team": "Red",
+    "points": 0
+  },
+  {
+    "date": "2020-09-16",
+    "name": "Jitse",
+    "team": "Blue",
+    "points": 1
+  },
+  {
+    "date": "2020-09-16",
+    "name": "Ashwin",
+    "team": "Blue",
+    "points": 1
+  },
+  {
+    "date": "2020-09-16",
+    "name": "Paulo",
+    "team": "Blue",
+    "points": 1
+  },
+  {
+    "date": "2020-09-16",
+    "name": "Daniel",
+    "team": "Blue",
+    "points": 1
+  },
+  {
+    "date": "2020-09-16",
+    "name": "John",
+    "team": "Blue",
+    "points": 1
+  },
+  {
+    "date": "2020-09-16",
+    "name": "Nicolas",
+    "team": "Blue",
+    "points": 1
+  },
+  {
+    "date": "2020-09-16",
+    "name": "Beppe",
+    "team": "Red",
+    "points": 1
+  },
+  {
+    "date": "2020-09-16",
+    "name": "Robin",
+    "team": "Red",
+    "points": 1
+  },
+  {
+    "date": "2020-09-16",
+    "name": "Iarik",
+    "team": "Red",
+    "points": 1
+  },
+  {
+    "date": "2020-09-16",
+    "name": "Kai",
+    "team": "Red",
+    "points": 1
+  },
+  {
+    "date": "2020-09-16",
+    "name": "Fatih",
+    "team": "Red",
+    "points": 1
+  },
+  {
+    "date": "2020-09-16",
+    "name": "Hassan",
+    "team": "Red",
+    "points": 1
+  },
+  {
+    "date": "2020-09-09",
+    "name": "Jitse",
+    "team": "Red",
+    "points": 3
+  },
+  {
+    "date": "2020-09-09",
+    "name": "Robin",
+    "team": "Red",
+    "points": 3
+  },
+  {
+    "date": "2020-09-09",
+    "name": "Hassan",
+    "team": "Red",
+    "points": 3
+  },
+  {
+    "date": "2020-09-09",
+    "name": "Nicolas",
+    "team": "Red",
+    "points": 3
+  },
+  {
+    "date": "2020-09-09",
+    "name": "Paulo",
+    "team": "Red",
+    "points": 3
+  },
+  {
+    "date": "2020-09-09",
+    "name": "Daniel",
+    "team": "Red",
+    "points": 3
+  },
+  {
+    "date": "2020-09-09",
+    "name": "Kemo",
+    "team": "Blue",
+    "points": 0
+  },
+  {
+    "date": "2020-09-09",
+    "name": "Ashwin",
+    "team": "Blue",
+    "points": 0
+  },
+  {
+    "date": "2020-09-09",
+    "name": "Fatih",
+    "team": "Blue",
+    "points": 0
+  },
+  {
+    "date": "2020-09-09",
+    "name": "Kai",
+    "team": "Blue",
+    "points": 0
+  },
+  {
+    "date": "2020-09-09",
+    "name": "Beppe",
+    "team": "Blue",
+    "points": 0
+  },
+  {
+    "date": "2020-09-09",
+    "name": "JP",
+    "team": "Blue",
+    "points": 0
+  },
+  {
+    "date": "2020-09-02",
+    "name": "Beppe",
+    "team": "Blue",
+    "points": 3
+  },
+  {
+    "date": "2020-09-02",
+    "name": "Hassan",
+    "team": "Blue",
+    "points": 3
+  },
+  {
+    "date": "2020-09-02",
+    "name": "Paulo",
+    "team": "Blue",
+    "points": 3
+  },
+  {
+    "date": "2020-09-02",
+    "name": "Daniel",
+    "team": "Blue",
+    "points": 3
+  },
+  {
+    "date": "2020-09-02",
+    "name": "Robin",
+    "team": "Blue",
+    "points": 3
+  },
+  {
+    "date": "2020-09-02",
+    "name": "Fatih",
+    "team": "Blue",
+    "points": 3
+  },
+  {
+    "date": "2020-09-02",
+    "name": "Iarik",
+    "team": "Red",
+    "points": 0
+  },
+  {
+    "date": "2020-09-02",
+    "name": "John",
+    "team": "Red",
+    "points": 0
+  },
+  {
+    "date": "2020-09-02",
+    "name": "Feroz",
+    "team": "Red",
+    "points": 0
+  },
+  {
+    "date": "2020-09-02",
+    "name": "Kai",
+    "team": "Red",
+    "points": 0
+  },
+  {
+    "date": "2020-09-02",
+    "name": "Nicolas",
+    "team": "Red",
+    "points": 0
+  },
+  {
+    "date": "2020-09-02",
+    "name": "JP",
+    "team": "Red",
+    "points": 0
+  }
+]

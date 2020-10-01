@@ -242,6 +242,6 @@ dmypy.json
 # pytype static type analyzer
 .pytype/
 
-chromedriver
+bin/chromedriver
 
 # End of https://www.toptal.com/developers/gitignore/api/python,pycharm
