@@ -57,7 +57,6 @@ if __name__ == "__main__":
             'points': {team: 3, 'Draw': 1}.get(winner, 0),
         }
         for team, names in teams.items()
-        for team, names in teams.items()
         for name in names
     ]
 

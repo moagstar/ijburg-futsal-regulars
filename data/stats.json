@@ -1,24 +1,24 @@
 [
   {
     "name": "Eric",
-    "played": 2,
+    "played": 1,
     "red": 0,
-    "blue": 2,
-    "wins": 2,
+    "blue": 1,
+    "wins": 1,
     "draw": 0,
     "lose": 0,
-    "points": 6,
+    "points": 3,
     "pointsPerGame": 3.0
   },
   {
     "name": "Alex",
-    "played": 2,
+    "played": 1,
     "red": 0,
-    "blue": 2,
-    "wins": 2,
+    "blue": 1,
+    "wins": 1,
     "draw": 0,
     "lose": 0,
-    "points": 6,
+    "points": 3,
     "pointsPerGame": 3.0
   },
   {
@@ -34,31 +34,42 @@
   },
   {
     "name": "Daniel",
-    "played": 7,
+    "played": 6,
     "red": 1,
-    "blue": 6,
-    "wins": 6,
+    "blue": 5,
+    "wins": 5,
     "draw": 1,
     "lose": 0,
-    "points": 19,
+    "points": 16,
     "pointsPerGame": 2.7
   },
   {
-    "name": "Hassan",
-    "played": 7,
-    "red": 3,
+    "name": "Paulo",
+    "played": 6,
+    "red": 2,
     "blue": 4,
-    "wins": 5,
+    "wins": 4,
     "draw": 1,
     "lose": 1,
-    "points": 16,
-    "pointsPerGame": 2.3
+    "points": 13,
+    "pointsPerGame": 2.2
   },
   {
-    "name": "John",
+    "name": "Hassan",
+    "played": 6,
+    "red": 3,
+    "blue": 3,
+    "wins": 4,
+    "draw": 1,
+    "lose": 1,
+    "points": 13,
+    "pointsPerGame": 2.2
+  },
+  {
+    "name": "Robin",
     "played": 5,
-    "red": 1,
-    "blue": 4,
+    "red": 3,
+    "blue": 2,
     "wins": 3,
     "draw": 1,
     "lose": 1,
@@ -66,15 +77,15 @@
     "pointsPerGame": 2.0
   },
   {
-    "name": "Paulo",
-    "played": 7,
-    "red": 3,
-    "blue": 4,
-    "wins": 4,
+    "name": "John",
+    "played": 4,
+    "red": 1,
+    "blue": 3,
+    "wins": 2,
     "draw": 1,
-    "lose": 2,
-    "points": 13,
-    "pointsPerGame": 1.9
+    "lose": 1,
+    "points": 7,
+    "pointsPerGame": 1.8
   },
   {
     "name": "Jitse",
@@ -88,26 +99,15 @@
     "pointsPerGame": 1.8
   },
   {
-    "name": "Robin",
-    "played": 6,
-    "red": 4,
-    "blue": 2,
-    "wins": 3,
-    "draw": 1,
-    "lose": 2,
-    "points": 10,
-    "pointsPerGame": 1.7
-  },
-  {
     "name": "Iarik",
-    "played": 6,
+    "played": 5,
     "red": 3,
-    "blue": 3,
-    "wins": 3,
+    "blue": 2,
+    "wins": 2,
     "draw": 1,
     "lose": 2,
-    "points": 10,
-    "pointsPerGame": 1.7
+    "points": 7,
+    "pointsPerGame": 1.4
   },
   {
     "name": "Nicolas",
@@ -155,45 +155,45 @@
   },
   {
     "name": "Kai",
-    "played": 7,
-    "red": 5,
+    "played": 6,
+    "red": 4,
     "blue": 2,
     "wins": 1,
     "draw": 1,
-    "lose": 5,
+    "lose": 4,
     "points": 4,
-    "pointsPerGame": 0.6
+    "pointsPerGame": 0.7
   },
   {
     "name": "Dima",
-    "played": 2,
-    "red": 2,
+    "played": 1,
+    "red": 1,
     "blue": 0,
     "wins": 0,
     "draw": 0,
-    "lose": 2,
+    "lose": 1,
     "points": 0,
     "pointsPerGame": 0.0
   },
   {
     "name": "Oleksii",
-    "played": 2,
-    "red": 2,
+    "played": 1,
+    "red": 1,
     "blue": 0,
     "wins": 0,
     "draw": 0,
-    "lose": 2,
+    "lose": 1,
     "points": 0,
     "pointsPerGame": 0.0
   },
   {
     "name": "JP",
-    "played": 6,
-    "red": 5,
+    "played": 5,
+    "red": 4,
     "blue": 1,
     "wins": 0,
     "draw": 0,
-    "lose": 6,
+    "lose": 5,
     "points": 0,
     "pointsPerGame": 0.0
   },
