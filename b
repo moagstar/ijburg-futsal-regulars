@@ -1,1 +1,1 @@
-python ./src/result b
+python ./src/result.py b

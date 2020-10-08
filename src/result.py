@@ -24,7 +24,12 @@ if __name__ == "__main__":
         event = (browser.find_by_css('.eventCard--link') | to(list))[date]
         browser.visit(event['href'])
         date = browser.find_by_tag('time')['datetime'][:-3] | to(int)  # strip milliseconds
-        teams = browser.find_by_css('.comment-content').text
+        for comment in browser.find_by_css('.comment-content'):
+            if 'Teams for tonight' in comment.text:
+                teams = comment.text
+                break
+        else:
+            raise ValueError('No teams comment found')
 
     pattern = re.compile('\s*(red|blue):([^$]*)$', flags=re.IGNORECASE)
     teams = dict(
@@ -52,6 +57,7 @@ if __name__ == "__main__":
             'points': {team: 3, 'Draw': 1}.get(winner, 0),
         }
         for team, names in teams.items()
+        for team, names in teams.items()
         for name in names
     ]
 
@@ -72,7 +78,10 @@ if __name__ == "__main__":
                 'draw': games | filterwith(lambda x: x['points'] == 1) | to(count),
                 'lose': games | filterwith(lambda x: x['points'] == 0) | to(count),
                 'points': sum(x['points'] | to(int) for x in games),
-                'pointsPerGame': (sum(x['points'] | to(int) for x in games) | to(float)) / len(games),
+                'pointsPerGame': round(
+                    (sum(x['points'] | to(int) for x in games) | to(float)) / len(games),
+                    1,
+                ),
             }
             for name, games in groupby(lambda x: x['name'], records).items()
         ]
