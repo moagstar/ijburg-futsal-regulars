@@ -25,7 +25,7 @@ if __name__ == "__main__":
         browser.visit(event['href'])
         date = browser.find_by_tag('time')['datetime'][:-3] | to(int)  # strip milliseconds
         for comment in browser.find_by_css('.comment-content'):
-            if 'Teams for tonight' in comment.text:
+            if 'Teams for' in comment.text:
                 teams = comment.text
                 break
         else:
