@@ -1,4 +1,76 @@
-  [
+[
+  {
+    "date": "2021-09-15",
+    "name": "Kemo",
+    "team": "Blue",
+    "points": 0
+  },
+  {
+    "date": "2021-09-15",
+    "name": "Daniel",
+    "team": "Blue",
+    "points": 0
+  },
+  {
+    "date": "2021-09-15",
+    "name": "Robin",
+    "team": "Blue",
+    "points": 0
+  },
+  {
+    "date": "2021-09-15",
+    "name": "Leonidas",
+    "team": "Blue",
+    "points": 0
+  },
+  {
+    "date": "2021-09-15",
+    "name": "Fatih",
+    "team": "Blue",
+    "points": 0
+  },
+  {
+    "date": "2021-09-15",
+    "name": "Paulo",
+    "team": "Blue",
+    "points": 0
+  },
+  {
+    "date": "2021-09-15",
+    "name": "Iarik",
+    "team": "Red",
+    "points": 3
+  },
+  {
+    "date": "2021-09-15",
+    "name": "Kai",
+    "team": "Red",
+    "points": 3
+  },
+  {
+    "date": "2021-09-15",
+    "name": "Nicolas",
+    "team": "Red",
+    "points": 3
+  },
+  {
+    "date": "2021-09-15",
+    "name": "John",
+    "team": "Red",
+    "points": 3
+  },
+  {
+    "date": "2021-09-15",
+    "name": "Hassan",
+    "team": "Red",
+    "points": 3
+  },
+  {
+    "date": "2021-09-15",
+    "name": "Alex K",
+    "team": "Red",
+    "points": 3
+  },
   {
     "date": "2021-09-01",
     "name": "Iarik",
