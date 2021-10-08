@@ -108,7 +108,7 @@ def update_matches(date: datetime.date, teams: Teams, winner: typing.Literal['r'
 
     with open(DIR/'../data/matches.json', 'w') as f:
         matches = [match for date, matches in matches_by_date.items() for match in matches]
-        json.dump(sorted(records, key=lambda x: x['date'], reverse=True), f, indent=2)
+        json.dump(sorted(matches, key=lambda x: x['date'], reverse=True), f, indent=2)
 
     return matches
 
@@ -140,13 +140,20 @@ def update_stats(matches: List[PlayerMatch]):
 
 if __name__ == "__main__":
 
-    winner = sys.argv[1]
-    offset = sys.argv[2] | to(int) if len(sys.argv) > 2 else 0
-    date, event_comment = get_event(offset=offset)
-    
-    event_comment = """
-        
-    """; date = datetime.date(2021, 9, 1)
+    if 0:
+        winner = sys.argv[1]
+        offset = sys.argv[2] | to(int) if len(sys.argv) > 2 else 0
+        date, event_comment = get_event(offset=offset)
+    else:
+        event_comment = """
+Teams for tonight:
+
+Blue: Iarik, Beppe, Ahmed, Kai, Hassan, John
+
+Red: Alex K, Kemo, Robin, Daniel, Oleksii, Anderson
+        """
+        date = datetime.date(2021, 10, 6)
+        winner = 'r'
 
     teams = get_teams(event_comment)
     records = update_matches(date, teams, winner)
