@@ -4,7 +4,7 @@ import sys
 import datetime
 import typing
 from pathlib import Path
-from typing import Tuple, List, Any, Dict
+from typing import Tuple, List
 
 import splinter
 from funcoperators import to, filterwith
@@ -73,7 +73,7 @@ class PlayerMatch(typing.TypedDict):
     points: int
 
 
-def update_matches(date: datetime.date, teams: Teams, winner: typing.Literal['r', 'b', 'd']) -> List[PlayerMatch]:
+def update_matches(matches, date: datetime.date, teams: Teams, winner: typing.Literal['r', 'b', 'd']) -> List[PlayerMatch]:
     """
     Update the matches json file containing a history of the matches that were
     played. If the match for a particular date already exists those values are
@@ -87,13 +87,11 @@ def update_matches(date: datetime.date, teams: Teams, winner: typing.Literal['r'
     """
     winner = {'b': 'Blue', 'r': 'Red', 'd': 'Draw'}[winner]
 
-    with open(DIR/'../data/matches.json') as f:
-        matches = json.load(f)
-        matches_by_date = groupby(lambda x: x['date'], matches | to(list))
-        matches_by_date = keymap(
-            lambda x: datetime.datetime.strptime(x, '%Y-%m-%d').date(),
-            matches_by_date,
-        )
+    matches_by_date = groupby(lambda x: x['date'], matches | to(list))
+    matches_by_date = keymap(
+        lambda x: datetime.datetime.strptime(x, '%Y-%m-%d').date(),
+        matches_by_date,
+    )
 
     matches_by_date[date] = [
         {
@@ -106,55 +104,57 @@ def update_matches(date: datetime.date, teams: Teams, winner: typing.Literal['r'
         for name in names
     ]
 
-    with open(DIR/'../data/matches.json', 'w') as f:
-        matches = [match for date, matches in matches_by_date.items() for match in matches]
-        json.dump(sorted(matches, key=lambda x: x['date'], reverse=True), f, indent=2)
-
-    return matches
+    matches = [match for date, matches in matches_by_date.items() for match in matches]
+    return sorted(matches, key=lambda x: x['date'], reverse=True)
 
 
 def update_stats(matches: List[PlayerMatch]):
     """
     Update the statistics file based on the played matches.
     """
-    with open(DIR/'../data/stats.json', 'w') as f:
-        stats = [
-            {
-                'name': name,
-                'played': len(games),
-                'red':  games | filterwith(lambda x: x['team'] == 'Red') | to(count),
-                'blue':  games | filterwith(lambda x: x['team'] == 'Blue') | to(count),
-                'wins': games | filterwith(lambda x: x['points'] == 3) | to(count),
-                'draw': games | filterwith(lambda x: x['points'] == 1) | to(count),
-                'lose': games | filterwith(lambda x: x['points'] == 0) | to(count),
-                'points': sum(x['points'] | to(int) for x in games),
-                'pointsPerGame': round(
-                    (sum(x['points'] | to(int) for x in games) | to(float)) / len(games),
-                    1,
-                ),
-            }
-            for name, games in groupby(lambda x: x['name'], matches).items()
-        ]
-        json.dump(sorted(stats, key=lambda x: x['pointsPerGame'], reverse=True), f, indent=2)
+    stats = [
+        {
+            'name': name,
+            'played': len(games),
+            'red':  games | filterwith(lambda x: x['team'] == 'Red') | to(count),
+            'blue':  games | filterwith(lambda x: x['team'] == 'Blue') | to(count),
+            'wins': games | filterwith(lambda x: x['points'] == 3) | to(count),
+            'draw': games | filterwith(lambda x: x['points'] == 1) | to(count),
+            'lose': games | filterwith(lambda x: x['points'] == 0) | to(count),
+            'points': sum(x['points'] | to(int) for x in games),
+            'pointsPerGame': round(
+                (sum(x['points'] | to(int) for x in games) | to(float)) / len(games),
+                1,
+            ),
+        }
+        for name, games in groupby(lambda x: x['name'], matches).items()
+    ]
+    return sorted(stats, key=lambda x: x['pointsPerGame'], reverse=True)
 
 
 if __name__ == "__main__":
 
-    if 0:
-        winner = sys.argv[1]
-        offset = sys.argv[2] | to(int) if len(sys.argv) > 2 else 0
+    winner = {x: x for x in 'rbd'}[sys.argv[1]]
+    offset = sys.argv[2] | to(int) if len(sys.argv) > 2 else 0
+
+    # scrape the teams if we are not pasting the comment here
+    date, event_comment = datetime.date(2022, 9, 1), """"""
+    if not event_comment:
         date, event_comment = get_event(offset=offset)
-    else:
-        event_comment = """
-Teams for tonight:
-
-Blue: Iarik, Beppe, Ahmed, Kai, Hassan, John
-
-Red: Alex K, Kemo, Robin, Daniel, Oleksii, Anderson
-        """
-        date = datetime.date(2021, 10, 6)
-        winner = 'r'
-
     teams = get_teams(event_comment)
-    records = update_matches(date, teams, winner)
-    update_stats(records)
+
+    # season starts in september (9th month)
+    season = str(date.year - (1 if date.month < 9 else 0))
+    season = f'{season}-{int(season[-2:]) + 1}'
+
+    # load the existing matches for this season
+    with open(f'data/{season}/matches.json', 'w') as f:
+        matches = json.load(f)
+        matches = update_matches(matches, date, teams, winner)
+        f.seek(0)
+        json.dump(matches, f, indent=2)
+
+    # update the stats for this season
+    stats = update_stats(matches)
+    with open(f'data/{season}/stats.json', 'w') as f:
+        json.dump(stats, f, indent=2)
