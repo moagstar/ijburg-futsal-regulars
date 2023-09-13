@@ -1,0 +1,19 @@
+====
+
+Date: 2023-09-06
+Teams:
+    Red: [Alex, Alex Rosu, Fatih Karagoz, Hassan El Azzouzi, Niccolò Barberis, Yannis Zervos]
+    Blue: [Alex Smorodin, Ali Yadegari, Daniel Bradburn, Marco Gualandri, Mateus Gemignani, Taco]
+Result: Blue
+Score: 18-6
+
+====
+
+Date: 2023-09-13
+Teams:
+    Red: [Alex Rosu, Daniel Bradburn, James, Mateus Gemignani, Randy Bukasa, Taco]
+    Blue: [Alex, Ali Yadegari, Marco Gualandri, Hassan El Azzouzi, Niccolò Barberis, Robin Schreur]
+Result: Blue
+Score: 18-6
+
+====
